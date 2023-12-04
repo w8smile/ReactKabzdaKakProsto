@@ -16,7 +16,7 @@ export function Accordion(props: AccordionPropsType) {
     } else {
         return <AccordionTitle title={props.titleValue}/>
     }
-    // console.log('Accordion rendring')
+    console.log('Accordion rendring')
 
 
 }
