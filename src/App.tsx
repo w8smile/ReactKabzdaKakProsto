@@ -11,13 +11,10 @@ import {OnOf} from "./components/OnOf";
 // sum(100,300);
 // hello();
 
-function App(props: any) {
+function App() {
     console.log('App rendring')
     return <div>
-        <PageTitle title={"This is APP component"}/>
-        {/*<PageTitle title={"My Friends"}/>*/}
-        {/*Article 1*/}
-        {/*<Rating value={1}/>*/}
+        <PageTitle title={"REACT KABZDA"}/>
         <Accordion titleValue={"Menu"} collapsed={true}/>
         <Accordion titleValue={"Users"} collapsed={false}/>
         <Rating value={0}/>
@@ -28,7 +25,6 @@ function App(props: any) {
         <Rating value={5}/>
         <OnOf push={true}/>
         <OnOf push={false}/>
-
     </div>
 }
 
@@ -37,7 +33,6 @@ type PageTitlePropsType = {
 }
 
 function PageTitle(props: PageTitlePropsType) {
-    console.log('PageTitle rendring')
     return <h1>{props.title}</h1>
 }
 
