@@ -21,7 +21,7 @@ function App() {
         <Accordion titleValue={"Menu"} collapsed={false}/>
         <UncontrolledRating/>
         <Rating value={3}/>
-        {/*<PageTitle title={"REACT KABZDA"}/>*/}
+        <PageTitle title={"REACT KABZDA"}/>
 
         {/*<Rating value={0}/>*/}
         {/*<Rating value={1}/>*/}
