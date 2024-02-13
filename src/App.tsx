@@ -6,6 +6,7 @@ import Accordion from "./components/acordion/Accordion";
 import {UncontrolledAccordion} from "./components/acordion/UncontrolledAccordion";
 import {OnOf} from "./components/OnOf";
 import {UncontrolledOnOf} from "./components/UncontrolledOnOf";
+import {ControlledCheckbox, ControlledInput, ControlledOption, Input, Input2} from "./components/input";
 
 function App() {
     console.log('App rendring')
@@ -15,22 +16,19 @@ function App() {
     return <div className="App">
         <Rating value={ratingValue} onClick={setRatingValue}/>
         <OnOf on={switchOn} onChange={setSwitchOn}/>
-        {/*<UncontrolledAccordion titleValue={"Menu"}/>*/}
         <Accordion titleValue={"Menu"}
                    collapsed={accordionCollapsed}
                    onChange={() => {
                        setAccordionCollapsed(!accordionCollapsed)
                    }}/>
-        {/*<UncontrolledRating/>*/}
-        {/*<Rating value={3}/>*/}
         <PageTitle title={"REACT KABZDA"}/>
         <UncontrolledOnOf onChange={setSwitchOn}/> {switchOn.toString()}
-        {/*<Rating value={0}/>*/}
-        {/*<Rating value={1}/>*/}
-        {/*<Rating value={2}/>*/}
-        {/*<Rating value={3}/>*/}
-        {/*<Rating value={4}/>*/}
-        {/*<Rating value={5}/>*/}
+        <Input/>
+        <Input2/>
+        <ControlledInput/>
+        <ControlledCheckbox/>
+        <ControlledOption/>
+
     </div>
 }
 
