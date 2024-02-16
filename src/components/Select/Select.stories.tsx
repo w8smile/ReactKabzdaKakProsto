@@ -11,7 +11,7 @@ export const WithValue = () => {
     const [value, setValue] = useState(3)
     return (
         <>
-            <Select onChange={action('ValueChanged')}
+            <Select onChange={setValue}
                     items={[
                         {value: 1, title: 'Minsk'},
                         {value: 2, title: 'Krichev'},
@@ -26,7 +26,7 @@ export const WithoutValue = () => {
     const [value, setValue] = useState(null)
     return (
         <div>
-            <Select onChange={action('ValueChanged')}
+            <Select onChange={setValue}
                     value={value}
                     items={[
                         {value: 1, title: 'Minsk'},
